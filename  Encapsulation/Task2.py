@@ -3,7 +3,7 @@
 Создайте геттер, сеттер и делиттер чтобы можно было получить звание героя, установить звание "Победитель арены"
 в случае победы героя в битве и удалить ранк в случае поражения.
 """
-
+from random import randint
 from time import sleep
 
 class Hero():
@@ -62,9 +62,9 @@ class Hero():
         )
 
 
-knight = Hero('Ричард', 50, 25, 20, 'Меч', 'Герой')
+knight = Hero('Ричард', randint(100, 500), randint(5, 50), randint(5, 200), 'Меч', 'Герой')
 knight.print_info()
-rascal = Hero('Хелен', 20, 5, 5, 'Лук', 'Монстр')
+rascal = Hero('Хелен', randint(100, 500), randint(5, 50), randint(5, 200), 'Лук', 'Монстр')
 rascal.print_info()
 while True:
     if knight.health > 0:
