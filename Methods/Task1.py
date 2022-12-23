@@ -26,11 +26,11 @@ class Person:
     @staticmethod
     def staticmethod(year_birth):
         age = (date.today().year - year_birth)
-        if age < 18:
+        if age in range(1, 17):
             return 'Несовершеннолетний'
         else:
             return 'Совершеннолетний'
 
 
 x = Person('Alex')
-print(x.printinfo(), x.classmethod(2005), x.staticmethod(2005))
+print(x.printinfo(), x.classmethod(2005), x.staticmethod(2007))

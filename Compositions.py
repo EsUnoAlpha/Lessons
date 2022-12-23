@@ -95,4 +95,4 @@ user_1.user_order(12, 'Мышь', '12.12.2022', 7, 10000)
 user_1.user_order(13, 'Клавиатура', '14.12.2022', 7, 15000)
 user_1.changeorder(12, 'Мышь', '13.12.2022', 3, 5000)
 for j in user_1.order:
-    print(j.id, j.item, j.price)
+    print(j.id, j.item, j.price) 
